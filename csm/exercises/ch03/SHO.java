@@ -39,7 +39,7 @@ public class SHO {
 	
 		for (double dt = 0.1; t < 20; t = t + dt) {
 			
-			graph.append(index++, t, x);
+			graph.append(index, t, x);
 			System.out.println( "\n------------------------------" +
 								"\nt: " + t +
 								"\n------------------------------" +
@@ -74,6 +74,31 @@ public class SHO {
 	
 	public double E(double _v, double _x) {
 		return (m/2)*(_v*_v) + (k/2)*(_x*_x);
+	}
+	
+/********
+ * Main *
+ ********/
+	
+	public static void main(String[] args) {
+		
+		double k = 1;
+		double m = 1;
+		
+		System.out.println("k:\t"+k);
+		System.out.println("m:\t"+m);
+		
+		double x0 = 10;
+		double t0 = 0;
+		double v0 = 0;
+		
+		System.out.println("x0:\t"+x0);
+		System.out.println("t0:\t"+t0);
+		System.out.println("v0:\t"+v0);
+		
+		SHO sho = new SHO(k, m);
+		sho.plotMotion(x0, t0, v0);
+		
 	}
 	
 }

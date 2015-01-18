@@ -119,6 +119,12 @@ public class CoffeeFilter  {
  * Main *
  ********/
 	
-	
+	public static void main(String[] args) {
+		
+		CoffeeFilter cf = new CoffeeFilter();
+		cf.plot();
+		cf.printResults();
+		
+	}
 	
 }

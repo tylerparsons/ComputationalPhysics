@@ -18,15 +18,15 @@ public class NewtonCoolingODE implements ODE {
 	
 	@Override
 	public void getRate(double[] state, double[] rate) {
-		rate[0] = -1* r*(T - T_s);
+		rate[0] = -1*r*(T - T_s);
 		rate[1] = 1;
 	}
 
 	@Override
 	public double[] getState() {
-		state[0] = T;
-		state[1] = t;
+		T = state[0];
+		t = state[1];
 		return state;
 	}
-
+	
 }
