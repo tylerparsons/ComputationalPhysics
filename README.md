@@ -2,7 +2,7 @@
 *A collection of computational solutions to various problems in physics. The solutions include graphical results as well as animated visualizations of the different physical systems.*
 
 ----
-## The various topics explored include:
+## Areas of Exploration
 * Numerical solutions of ODEs using Euler and Euler-Richardson algorithms such as:
 	* Projectile Motion with air resistance
 	* Charged particle motion in electromagnetic fields
